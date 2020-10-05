@@ -1,0 +1,15 @@
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\bin\Debug\netcoreapp3.1\Event_Interface.exe
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\bin\Debug\netcoreapp3.1\Event_Interface.deps.json
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\bin\Debug\netcoreapp3.1\Event_Interface.runtimeconfig.json
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\bin\Debug\netcoreapp3.1\Event_Interface.runtimeconfig.dev.json
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\bin\Debug\netcoreapp3.1\Event_Interface.dll
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\bin\Debug\netcoreapp3.1\Event_Interface.pdb
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\obj\Debug\netcoreapp3.1\Event_Interface.csprojAssemblyReference.cache
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\obj\Debug\netcoreapp3.1\Event_Interface.Form1.resources
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\obj\Debug\netcoreapp3.1\Event_Interface.csproj.GenerateResource.cache
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\obj\Debug\netcoreapp3.1\Event_Interface.AssemblyInfoInputs.cache
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\obj\Debug\netcoreapp3.1\Event_Interface.AssemblyInfo.cs
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\obj\Debug\netcoreapp3.1\Event_Interface.csproj.CoreCompileInputs.cache
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\obj\Debug\netcoreapp3.1\Event_Interface.dll
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\obj\Debug\netcoreapp3.1\Event_Interface.pdb
+C:\Schule\Programieren\C#\Übungen\Event_Interface\Event_Interface\obj\Debug\netcoreapp3.1\Event_Interface.genruntimeconfig.cache
