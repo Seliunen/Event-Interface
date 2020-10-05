@@ -30,7 +30,8 @@
         {
             this.Zimti = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.Außen = new System.Windows.Forms.Label();
+            this.Tuples = new System.Windows.Forms.Label();
+            this.ZimtiEventHandlerLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Zimti
@@ -53,21 +54,31 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Außen
+            // Tuples
             // 
-            this.Außen.AutoSize = true;
-            this.Außen.Location = new System.Drawing.Point(97, 56);
-            this.Außen.Name = "Außen";
-            this.Außen.Size = new System.Drawing.Size(42, 15);
-            this.Außen.TabIndex = 2;
-            this.Außen.Text = "Außen";
+            this.Tuples.AutoSize = true;
+            this.Tuples.Location = new System.Drawing.Point(97, 56);
+            this.Tuples.Name = "Tuples";
+            this.Tuples.Size = new System.Drawing.Size(41, 15);
+            this.Tuples.TabIndex = 2;
+            this.Tuples.Text = "Tuples";
+            // 
+            // ZimtiEventHandlerLabel
+            // 
+            this.ZimtiEventHandlerLabel.AutoSize = true;
+            this.ZimtiEventHandlerLabel.Location = new System.Drawing.Point(338, 47);
+            this.ZimtiEventHandlerLabel.Name = "ZimtiEventHandlerLabel";
+            this.ZimtiEventHandlerLabel.Size = new System.Drawing.Size(106, 15);
+            this.ZimtiEventHandlerLabel.TabIndex = 3;
+            this.ZimtiEventHandlerLabel.Text = "ZimtiEventHandler";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Außen);
+            this.Controls.Add(this.ZimtiEventHandlerLabel);
+            this.Controls.Add(this.Tuples);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Zimti);
             this.Name = "Form1";
@@ -81,7 +92,8 @@
 
         private System.Windows.Forms.Label Zimti;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label Außen;
+        private System.Windows.Forms.Label Tuples;
+        private System.Windows.Forms.Label ZimtiEventHandlerLabel;
     }
 }
 

@@ -8,6 +8,7 @@ namespace Event_Interface
 
         private static CounterZimti _item;
         string text;
+        
 
         public Form1()
         {
@@ -21,13 +22,27 @@ namespace Event_Interface
         private void Form1_Load(object sender, EventArgs e)
         {
             _item = new CounterZimti();
-            //_item.SetZimtiValue += (object sender, string e) =>
-            //{
-            //    lock (this)
-            //    {
-            //        UpdateUi(e);
-            //    }
-            //};
+
+            _item.SetZimtiValue1 += (object sender, ZimtiEventHandler e) =>
+            {
+                text = $"Außen: {e.OuterValue} Innen: {e.InnerValue}";
+                lock (this)
+                {
+                    UpdateUiZimtiEventHandler(text); 
+                }
+            };
+
+
+            _item.SetZimtiValue += (object sender, (int, int) e) =>
+            {
+                text = $"Außen: {e.Item2} Innen: {e.Item1}";
+                lock (this)
+                {
+                    UpdateUiTuples(text);
+                }
+            };
+
+
             _item.ZimtStern = this;
 
         }
@@ -40,24 +55,38 @@ namespace Event_Interface
         //    }
         //}
 
-        private void UpdateUiIn(string e)
+        private void UpdateUiTuples(string text)
         {
             if (InvokeRequired)
             {
-                BeginInvoke(new Action(() => UpdateUiIn(e)));
+                BeginInvoke(new Action(() => UpdateUiTuples(text)));
+                return;
+            }
+            Tuples.Text = text;
+        }
+
+
+
+        private void UpdateUiZimtiEventHandler(string text)
+        {
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() => UpdateUiZimtiEventHandler(text)));
+                return;
+            }
+            ZimtiEventHandlerLabel.Text = text;
+        }
+
+
+
+        private void UpdateUi(string e)
+        {
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() => UpdateUi(e)));
                 return;
             }
             Zimti.Text = e;
-        }
-
-        private void UpdateUiOut(string e)
-        {
-            if (InvokeRequired)
-            {
-                BeginInvoke(new Action(() => UpdateUiOut(e)));
-                return;
-            }
-            Außen.Text = e;
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -65,32 +94,13 @@ namespace Event_Interface
             await _item.StartAsync();
         }
 
-        public void PrintValueOut(int Out)
+        public void PrintValue(int innerValue, int outerValue)
         {
-            text = $"Äußeren Schleife: {Out}";
-
+            text = $"Außen: {outerValue} Innen: {innerValue}";
             lock (this)
             {
-                UpdateUiOut(text);
+                UpdateUi(text);
             }
         }
-
-        public void PrintValueIn(int In)
-        {
-            text = $"Innere Schleife: {In}";
-
-            lock (this)
-            {
-                UpdateUiIn(text);
-            }
-        }
-
-        //public void PrintValue(string text)
-        //{
-        //    lock (this)
-        //    {
-        //        UpdateUi(text);
-        //    }
-        //}
     }
 }

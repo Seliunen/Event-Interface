@@ -6,23 +6,25 @@ namespace Event_Interface
 {
     public class CounterZimti
     {
+        //EventHandler mit Tuples als Variablen
         public event EventHandler<(int,int)> SetZimtiValue;
         
         public delegate void MyHandler(object sender, ZimtiEventHandler e);
         public event MyHandler SetZimtiValue1;
 
         public IZimti ZimtStern { get; set; }
+
         public void Start()
         {
             for (int f = 0; f < 10; f++)
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    OnSetZimtiValue((f,i));
+                    OnSetZimtiValue((i,f));
 
-                    OnSetZimtiValue1(new ZimtiEventHandler(f, i));
+                    OnSetZimtiValue1(new ZimtiEventHandler(i, f));
 
-                    ZimtStern?.PrintValue(f, i);
+                    ZimtStern?.PrintValue(i, f);
                     Thread.Sleep(100);
                 }
             }
