@@ -14,6 +14,8 @@ namespace Event_Interface
 
         public IZimti ZimtStern { get; set; }
 
+        public Action<(int inner, int outer)> ZimtAction { get; set; }
+
         public void Start()
         {
             for (int f = 0; f < 10; f++)
@@ -23,7 +25,7 @@ namespace Event_Interface
                     OnSetZimtiValue((i,f));
 
                     OnSetZimtiValue1(new ZimtiEventHandler(i, f));
-
+                    ZimtAction?.Invoke((i,f));
                     ZimtStern?.PrintValue(i, f);
                     Thread.Sleep(100);
                 }

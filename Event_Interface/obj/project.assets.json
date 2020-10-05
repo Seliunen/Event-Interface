@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\KuhnenS\\.nuget\\packages\\": {}
+    "C:\\Users\\KotikA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Schule\\Programieren\\C#\\Übungen\\Event_Interface\\Event_Interface\\Event_Interface.csproj",
+      "projectUniqueName": "C:\\Users\\KotikA\\Source\\Repos\\Event-Interface\\Event_Interface\\Event_Interface.csproj",
       "projectName": "Event_Interface",
-      "projectPath": "C:\\Schule\\Programieren\\C#\\Übungen\\Event_Interface\\Event_Interface\\Event_Interface.csproj",
-      "packagesPath": "C:\\Users\\KuhnenS\\.nuget\\packages\\",
-      "outputPath": "C:\\Schule\\Programieren\\C#\\Übungen\\Event_Interface\\Event_Interface\\obj\\",
+      "projectPath": "C:\\Users\\KotikA\\Source\\Repos\\Event-Interface\\Event_Interface\\Event_Interface.csproj",
+      "packagesPath": "C:\\Users\\KotikA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KotikA\\Source\\Repos\\Event-Interface\\Event_Interface\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KuhnenS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KotikA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -32,6 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Tuples = new System.Windows.Forms.Label();
             this.ZimtiEventHandlerLabel = new System.Windows.Forms.Label();
+            this.ActionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Zimti
@@ -66,17 +67,27 @@
             // ZimtiEventHandlerLabel
             // 
             this.ZimtiEventHandlerLabel.AutoSize = true;
-            this.ZimtiEventHandlerLabel.Location = new System.Drawing.Point(338, 47);
+            this.ZimtiEventHandlerLabel.Location = new System.Drawing.Point(340, 56);
             this.ZimtiEventHandlerLabel.Name = "ZimtiEventHandlerLabel";
             this.ZimtiEventHandlerLabel.Size = new System.Drawing.Size(106, 15);
             this.ZimtiEventHandlerLabel.TabIndex = 3;
             this.ZimtiEventHandlerLabel.Text = "ZimtiEventHandler";
+            // 
+            // ActionLabel
+            // 
+            this.ActionLabel.AutoSize = true;
+            this.ActionLabel.Location = new System.Drawing.Point(564, 56);
+            this.ActionLabel.Name = "ActionLabel";
+            this.ActionLabel.Size = new System.Drawing.Size(70, 15);
+            this.ActionLabel.TabIndex = 4;
+            this.ActionLabel.Text = "ActionLabel";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ActionLabel);
             this.Controls.Add(this.ZimtiEventHandlerLabel);
             this.Controls.Add(this.Tuples);
             this.Controls.Add(this.button1);
@@ -94,6 +105,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label Tuples;
         private System.Windows.Forms.Label ZimtiEventHandlerLabel;
+        private System.Windows.Forms.Label ActionLabel;
     }
 }
 

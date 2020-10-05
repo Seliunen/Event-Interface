@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Schule\\Programieren\\C#\\Übungen\\Event_Interface\\Event_Interface\\Event_Interface.csproj": {}
+    "C:\\Users\\KotikA\\Source\\Repos\\Event-Interface\\Event_Interface\\Event_Interface.csproj": {}
   },
   "projects": {
-    "C:\\Schule\\Programieren\\C#\\Übungen\\Event_Interface\\Event_Interface\\Event_Interface.csproj": {
+    "C:\\Users\\KotikA\\Source\\Repos\\Event-Interface\\Event_Interface\\Event_Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Schule\\Programieren\\C#\\Übungen\\Event_Interface\\Event_Interface\\Event_Interface.csproj",
+        "projectUniqueName": "C:\\Users\\KotikA\\Source\\Repos\\Event-Interface\\Event_Interface\\Event_Interface.csproj",
         "projectName": "Event_Interface",
-        "projectPath": "C:\\Schule\\Programieren\\C#\\Übungen\\Event_Interface\\Event_Interface\\Event_Interface.csproj",
-        "packagesPath": "C:\\Users\\KuhnenS\\.nuget\\packages\\",
-        "outputPath": "C:\\Schule\\Programieren\\C#\\Übungen\\Event_Interface\\Event_Interface\\obj\\",
+        "projectPath": "C:\\Users\\KotikA\\Source\\Repos\\Event-Interface\\Event_Interface\\Event_Interface.csproj",
+        "packagesPath": "C:\\Users\\KotikA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KotikA\\Source\\Repos\\Event-Interface\\Event_Interface\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KuhnenS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KotikA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

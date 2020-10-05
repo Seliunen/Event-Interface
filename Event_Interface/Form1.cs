@@ -22,7 +22,7 @@ namespace Event_Interface
         private void Form1_Load(object sender, EventArgs e)
         {
             _item = new CounterZimti();
-
+            _item.ZimtAction = ZimtAction;
             _item.SetZimtiValue1 += (object sender, ZimtiEventHandler e) =>
             {
                 text = $"Außen: {e.OuterValue} Innen: {e.InnerValue}";
@@ -47,6 +47,25 @@ namespace Event_Interface
 
         }
 
+        private void ZimtAction((int inner, int outer) item)
+        {
+            text = $"Action!!! Außen: {item.outer} Innen: {item.inner}";
+            lock (this)
+            {
+                UpdateActionText(text);
+            }
+        }
+
+
+        private void UpdateActionText(string text)
+        {
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() => UpdateActionText(text)));
+                return;
+            }
+            ActionLabel.Text = text;
+        }
         //private void ItemSetZimtiValue(object sender, string e)
         //{
         //    lock (this)
